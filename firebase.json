@@ -1,6 +1,6 @@
 {
   "hosting": {
-   "site": "kientrucvietdungvp",
+    "site": "kientruc-vietdung",
     "public": "public",
     "ignore": [
       "firebase.json",

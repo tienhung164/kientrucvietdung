@@ -3,13 +3,14 @@
         }
 
     .img_gt1{
-        height: 400px;
+        height: 280px;
 
     }
     .img_gt2{
-        height: 200px;
+        height: 250px;
 
     }
+ 
     @media only screen and (max-width: 1000px){
        .img_gt{
            display: block;
@@ -25,4 +26,8 @@
         .resize_img{
             height: 170px;
          }
+        .res-quytrinh{
+            padding-left: 25px;
+        }
     }
+   
