@@ -1,0 +1,28 @@
+    .resize_img{
+        height: 190px;
+        }
+
+    .img_gt1{
+        height: 400px;
+
+    }
+    .img_gt2{
+        height: 200px;
+
+    }
+    @media only screen and (max-width: 1000px){
+       .img_gt{
+           display: block;
+       }
+       .img_gt1{
+            display: none;
+
+        }
+        .img_gt2{
+            display: none;
+
+        }
+        .resize_img{
+            height: 170px;
+            }
+    }
