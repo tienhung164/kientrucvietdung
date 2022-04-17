@@ -1,4 +1,4 @@
-.modal-cong-trinh {
+.modal-cong-trinh1 {
    position: fixed;
    top: 0;
    left: 0;
@@ -11,7 +11,97 @@
    z-index: 10;
 }
 
-.js-modal-container {
+.modal-cong-trinh2 {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: rgba(0, 0, 0, 0.803);
+   align-items: center;
+   justify-content: center;
+   display: none;
+   z-index: 10;
+}
+
+.modal-cong-trinh3 {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: rgba(0, 0, 0, 0.803);
+   align-items: center;
+   justify-content: center;
+   display: none;
+   z-index: 10;
+}
+
+.modal-cong-trinh4 {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: rgba(0, 0, 0, 0.803);
+   align-items: center;
+   justify-content: center;
+   display: none;
+   z-index: 10;
+}
+
+.modal-cong-trinh5 {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: rgba(0, 0, 0, 0.803);
+   align-items: center;
+   justify-content: center;
+   display: none;
+   z-index: 10;
+}
+
+.modal-cong-trinh6 {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: rgba(0, 0, 0, 0.803);
+   align-items: center;
+   justify-content: center;
+   display: none;
+   z-index: 10;
+}
+
+.js-modal-container1 {
+   width: 1320px;
+   height: 583px;
+}
+
+.js-modal-container2 {
+   width: 1320px;
+   height: 583px;
+}
+
+.js-modal-container3 {
+   width: 1320px;
+   height: 583px;
+}
+
+.js-modal-container4 {
+   width: 1320px;
+   height: 583px;
+}
+
+.js-modal-container5 {
+   width: 1320px;
+   height: 583px;
+}
+
+.js-modal-container6 {
    width: 1320px;
    height: 583px;
 }
