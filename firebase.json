@@ -1,6 +1,5 @@
 {
   "hosting": {
-    "site": "kientruc-vietdung",
     "public": "public",
     "ignore": [
       "firebase.json",
@@ -9,4 +8,3 @@
     ]
   }
 }
-
