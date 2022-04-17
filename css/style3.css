@@ -1,26 +1,18 @@
-#target4 {
-   position: static;
-}
-
 .modal-cong-trinh {
-   position: absolute;
+   position: fixed;
    top: 0;
-   /* left: 0;
+   left: 0;
    right: 0;
-   bottom: 0; */
+   bottom: 0;
    background-color: rgba(0, 0, 0, 0.803);
    align-items: center;
    justify-content: center;
-   display: flex;
+   display: none;
    z-index: 10;
 }
 
-/* .modal-cong-trinh .carousel-item img {
-   height: 500px !important ;
-   width: 500px !important;
-} */
-
-.modal-cong-trinh.open {
-   display: flex;
+.js-modal-container {
+   width: 1320px;
+   height: 583px;
 }
 
