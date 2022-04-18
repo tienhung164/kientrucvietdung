@@ -106,3 +106,127 @@
    height: 583px;
 }
 
+.price-table {
+   padding: 0 10px;
+   background-color: rgb(239, 243, 248);
+   padding-bottom: 50px;
+   margin-top: 50px;
+}
+
+.price-table-header {
+   text-align: center;
+   padding-top: 50px;
+   padding-bottom: 20px;
+   margin-bottom: 8px;
+}
+
+.price-table-header span {
+   display: inline-block;
+   text-transform: uppercase;
+   color: #131a24;
+   font-size: 38px;
+   line-height: 1.2;
+}
+
+.price-table-main {
+   margin: 0 180px;
+}
+
+.price-item-header {
+   background-color: rgb(242, 206, 118);
+   color: rgb(21, 21, 20);
+   font-size: 32px;
+   font-weight: bold;
+   text-align: center;
+   line-height: 1;
+   min-height: 130px;
+   padding-top: 30px;
+}
+
+.price-item-title {
+   background-color: white;
+   text-align: center;
+   padding: 15px 0;
+   color: rgb(21, 21, 20);
+   font-size: 18px;
+   font-weight: bold;
+   line-height: 1.2;
+}
+
+.price-item-desc {
+   background-color: white;
+   padding-left: 15px;
+   padding-bottom: 20px;
+   color: rgb(21, 21, 20);
+}
+
+.feedback {
+   margin: 50px 0;
+   padding: 0 10px;
+}
+
+.feedback-header {
+   text-align: center;
+   padding-top: 50px;
+   border-bottom: 2px solid rgb(242, 206, 118);
+   margin-bottom: 8px;
+   padding-bottom: 20px;
+}
+
+.feedback-header span {
+   text-transform: uppercase;
+   display: inline-block;
+   color: #131a24;
+   font-size: 38px;
+   line-height: 1.2;
+}
+
+.feedback-container {
+   padding-top: 20px;
+}
+
+.feedback-item {
+   text-align: center;
+}
+
+.feedback-item-info img {
+   width: 134px;
+   height: 134px;
+   border-radius: 50%;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 10px;
+}
+
+.feedback-item-info h6 {
+   margin-bottom: 3px;
+}
+
+.feedback-item-info .info-name {
+   color: rgb(33, 33, 33);
+   font-size: 18px;
+   font-weight: bold;
+   text-align: center;
+   line-height: 1.2;
+}
+
+.feedback-item-info .info-house {
+   color: rgb(33, 33, 33);
+   font-size: 14px;
+   font-style: italic;
+   text-align: center;
+   line-height: 1.2;
+   font-weight: 400;
+}
+
+.feedback-item-info .info-rate {
+   color: rgb(255, 174, 15);
+   font-size: 20px;
+   text-align: center;
+   line-height: 1.2;
+}
+
+.feedback-item-desc p {
+   margin-top: 8px;
+}
