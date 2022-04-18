@@ -161,8 +161,8 @@
 }
 
 .feedback {
-   margin: 50px 0;
-   padding: 0 10px;
+  
+   margin-bottom: 50px;
 }
 
 .feedback-header {
@@ -170,7 +170,7 @@
    padding-top: 50px;
    border-bottom: 2px solid rgb(242, 206, 118);
    margin-bottom: 8px;
-   padding-bottom: 20px;
+   padding-bottom: 10px;
 }
 
 .feedback-header span {

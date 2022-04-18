@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dữ liệu khách hàng</title>
+    <link rel="icon" href="/public/img/icon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ['Inter', 'sans-serif'],
+        },
+      }
+    }
+  }
+</script>
+</head>
+<body>
+    <div class="container mx-auto mt-10">
+
+        <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+            <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+            <th scope="col" class="px-6 py-3">
+            Date
+            </th>
+            <th scope="col" class="px-6 py-3">
+            Tên khách hàng
+            </th>
+            <th scope="col" class="px-6 py-3">
+            Số điện thoại
+            </th>
+            <th scope="col" class="px-6 py-3">
+            Nội dung
+            </th>
+            </tr>
+            </thead>
+            <tbody>
+                <% data.forEach(item => { 
+                     let timestamp =item.date
+                     var _date = new Date(timestamp * 1);
+                    %>
+                    <tr class="border-b dark:bg-gray-800 dark:border-gray-700 odd:bg-white even:bg-gray-50 odd:dark:bg-gray-800 even:dark:bg-gray-700">
+                        <th scope="row" class="ml-2 pl-2">
+                        <%=_date.toLocaleString()%>
+                        </th>
+                        <td class="px-6 py-4">
+                        <%=item.name%>
+                        </td>
+                        <td class="px-6 py-4">
+                            <%=item.sdt%>
+                        </td>
+                        <td class="px-6 py-4">
+                            <%=item.infor%>
+                        </td>
+                        </tr> 
+                    
+               <% }) %>
+            
+            </tbody>
+            </table>
+            
+            </div>
+            <div class="flex flex-row mt-2">
+            <div class="">
+                <form action="/delete" method="get">
+                <button
+                      type="submit"
+                      
+                      class="drop-shadow-lg inline-block px-7 py-3 bg-red-800 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-red-900 hover:shadow-lg focus:bg-red-800 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-900 active:shadow-lg transition duration-150 ease-in-out w-fit"
+                      data-mdb-ripple="true"
+                      data-mdb-ripple-color="light"
+                    >
+                      Xoá toàn bộ
+                    </button>
+                </form>
+                </div>
+                <div class="ml-2">
+                        <form action="/exel" method="get">
+                <button
+                      type="submit"
+                      
+                      class="drop-shadow-lg inline-block px-7 py-3 bg-cyan-800 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-cyan-900 hover:shadow-lg focus:bg-cyan-800 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-cyan-900 active:shadow-lg transition duration-150 ease-in-out w-fit"
+                      data-mdb-ripple="true"
+                      data-mdb-ripple-color="light"
+                    >
+                      Xuất file exel
+                    </button>
+                </form>
+                </div>
+                <div class="ml-2">
+                    <form action="/logout" method="get">
+                <button
+                      type="submit"
+                      
+                      class="drop-shadow-lg inline-block px-7 py-3 bg-cyan-800 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-cyan-900 hover:shadow-lg focus:bg-cyan-800 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-cyan-900 active:shadow-lg transition duration-150 ease-in-out w-fit"
+                      data-mdb-ripple="true"
+                      data-mdb-ripple-color="light"
+                    >
+                     Về Trang Chủ
+                    </button>
+                </form>
+                </div>
+            </div>
+            
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</html>

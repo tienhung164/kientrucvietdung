@@ -1064,7 +1064,7 @@
 				</div>
 			</div>
 		</div>
-
+       <div class="mx-20">
 		<div class="feedback">
 			<div class="feedback-header">
 				<span>Phản hồi của khách hàng</span>
@@ -1105,6 +1105,7 @@
 				</div>
 			</div>
 		</div>
+	</div>
 
 	</div>	
 
@@ -1161,51 +1162,40 @@
 							</div>
 
 							<div class="bg-white rounded-xl" >
-								<h2 class="title-footer text-center">Đăng kí nhận tư vấn và khảo sát miễn phí</h2>
-								
-
+								<form action="/data" method="post">
+								<h2 class="title-footer text-center">Đăng kí nhận tư vấn và khảo sát miễn phí</h2>	
 									<div class="w-full  px-3 mb-2">
 										<label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
 										  Họ tên Anh/Chị
 										</label>
-										<input id="name" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text">
+										<input name="name" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text">
 									 </div>
 									 <div class="w-full  px-3 mb-2">
 										<label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
 										  Số điện thoại
 										</label>
-										<input id="sdt" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text">
+										<input name="sdt" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text">
 									 </div>
 									 <div class="w-full px-3 mb-4">
 										<label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
 										  Thông tin mảnh đất
 										</label>
-										<input id="infor" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text">
+										<input name="infor" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text">
 									 </div>
 									 <div class="flex justify-center">
-									 <button onclick="STMP()" class="bg-cyan-700 hover:bg-cyan-900 text-white font-bold py-2 px-4 rounded-full">
+									 <button type="submit" class="bg-cyan-700 hover:bg-cyan-900 text-white font-bold py-2 px-4 rounded-full">
 										Gửi ngay
 									  </button>
-									</div>
-								
-								
+									
+									</div>		
+								</form>					
 							</div>
-
-
-
 						</div>
-
-
-
 					</div>
 				</div>
 				<div class="footer-powered">
 					<div class="wrap-content d-lg-flex d-md-flex align-items-center justify-content-center">
 						<p class="copyright">Copyright © Kiến Trúc Việt Dũng. Powered by pallgree.dev</p>
-
-
-
-
 					</div>
 				</div>
 
@@ -1265,7 +1255,6 @@
 
 				</ul>
 			</div>
-
 			<!-- Modal notify -->
 			<div class="modal modal-custom fade" id="popup-notify" tabindex="-1" role="dialog"
 				aria-labelledby="popup-notify-label" aria-hidden="true">
@@ -1284,7 +1273,6 @@
 					</div>
 				</div>
 			</div>
-
 			<!-- Quang Thai -->
 			<div class="">
 				<!-- Cong trinh 1 -->
@@ -1718,11 +1706,7 @@
 			<script type="text/javascript"
 			src="./node_modules/jquery-toast-plugin/dist/jquery.toast.min.js"></script>	
 
-			<!-- smtpjs -->
-			<script src="https://smtpjs.com/v3/smtp.js"></script>
-			
-			<!-- smtpjs -->
-
+	
 
 		<!-- Js Structdata -->
 
@@ -1908,24 +1892,7 @@
 
 		<!-- toat -->
 
-				<!-- smtpjs -->
-			<script>
-				  
- 					function STMP(){
-						   let name= $('#name').val()
-						   let sdt= $('#sdt').val()
-						   let infor= $('#infor').val()
-						Email.send({
-							Host : "smtp.gmail.com",
-							Username : "",
-							Password : "",
-							To : '',
-							From : "",
-							Subject : "Yêu cầu tư vấn từ khách hàng",
-							Body : `Tên: ${name}`+"\n"+`Sđt: ${sdt}` +"\n"+`Thông tin: ${infor}`}).
-							then( message => alert(`Chào ${name} ,yêu cầu của bạn đã gửi thành công!`));
-						}
-		</script>
+			
 
 
 
