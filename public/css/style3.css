@@ -140,7 +140,7 @@
    text-align: center;
    line-height: 1;
    min-height: 130px;
-   padding-top: 30px;
+   padding-top: 50px;
 }
 
 .price-item-title {
@@ -229,4 +229,22 @@
 
 .feedback-item-desc p {
    margin-top: 8px;
+}
+
+@media screen and (max-width: 950px) {
+   .price-table-main {
+      margin: 0 0;
+   }
+}
+
+@media screen and (max-width: 700px) {
+   .price-table-main {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .feedback-container {
+      display: flex;
+      flex-direction: column;
+   }
 }
