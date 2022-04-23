@@ -10,6 +10,7 @@ const fs = require('fs')
 var cookieParser = require('cookie-parser')
 const admin = require('./model/admin')
 const isAmin = require('./midddleware/auth')
+const port = 8080
 
 app.use(cookieParser());
 app.use(express.static('public'))
@@ -128,6 +129,6 @@ app.get('/delete',isAmin,async (req,res)=>{
 
 })
 
-app.listen(5000,()=>{
-    console.log(`host run in port 5000`)
+app.listen(port,()=>{
+    console.log(`host run in port ${port}`)
 })
